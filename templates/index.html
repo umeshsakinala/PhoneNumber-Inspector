@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number </title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/images/icon.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/styles/index.css') }}">
+</head>
+<body>
+    <h1>Phone Number Validator</h1>
+    <form method="POST">
+        <label for="phoneNumber">Enter Phone Number with Country Code:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required>
+        <button type="submit">Validate</button>
+    </form>
+</body>
+</html>
